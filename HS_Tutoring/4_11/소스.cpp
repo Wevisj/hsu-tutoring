@@ -4,8 +4,9 @@ using namespace std;
 class Container {
 	int size;
 public:
+	Container() { size = 10; }
 	void fill() { size = 10; }
-	void consume() { if (size == 0) cout << "원료가 부족합니다."; else size -= 1; }
+	void consume() { if (size == 0) cout << "원료가 부족합니다." << endl; else size -= 1; }
 	int getSize() { return size; }
 };
 
@@ -17,7 +18,7 @@ class CoffeeVendingMachine {
 	void selectSugarCoffee();
 	void show();
 public:
-	CoffeeVendingMachine() { tong[1] = new Container; }
+	CoffeeVendingMachine() { Container(); }
 	void run();
 };
 
