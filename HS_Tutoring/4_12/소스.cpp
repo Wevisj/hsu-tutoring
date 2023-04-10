@@ -21,6 +21,7 @@ public:
 };
 
 CircleManager::CircleManager(int size) {
+	this->size = size;
 	string name;
 	int r;
 	p = new Circle[size];
