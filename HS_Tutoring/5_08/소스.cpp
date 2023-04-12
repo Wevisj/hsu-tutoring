@@ -38,7 +38,7 @@ int main() {
 	MyIntStack a(10);
 	a.push(10);
 	a.push(20);
-	MyIntStack b(a);
+	MyIntStack b = a;
 	b.push(30);
 
 	int n;
